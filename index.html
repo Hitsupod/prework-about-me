@@ -7,115 +7,106 @@
 
     <title>Portfolio Page</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 </head>
 <!-- Navigation Bar -->
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" ></button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <a class="navbar-brand" href="index.html">Hitsupod</a>
     </div>
-
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li class="notactive"><a href="ResumeV2020.pdf">Resume</a></li>
-      </ul>
-    </div>
+      <a class="active"><a href="ResumeV2020.pdf">Resume</a>
   </div>
 </nav>
 
 <!-- Content Section  -->
 <body>
-    <header class='masthead'>
-        <p class='masthead-intro'>Hi I'm</p>
-        <h1 class='masthead-heading'>Reggie Littleton</h1>
-    </header>
+  <header class='masthead'>
+      <p class='masthead-intro'>Hi I'm</p>
+      <h1 class='masthead-heading'>Reggie Littleton</h1>
+  </header>
 
-    <!-- Image / About Row  -->
-    <div class="row align-items-center ">
-      <div class="col-lg-5" id='intro'>
-        <h2>Introduction</h2>
-        <p>I am a Business Administration graduate of The University of Texas at San Antonio as well 
-          as certified full stack developer through Trilogy with an interest in front end development. 
-          I am looking to help companies build responsive full scale websites while optimizing 
-          user-focused for customers with various business needs. </p>
+  <!-- Image / About Row  -->
+  <div class="row align-items-center ">
+    <div class="col-lg-5" id='intro'>
+      <h2>Introduction</h2>
+      <p>I am a Business Administration graduate of The University of Texas at San Antonio as well 
+        as certified full stack developer through Trilogy with an interest in front end development. 
+        I am looking to help companies build responsive full scale websites while optimizing 
+        user-focused for customers with various business needs. </p>
+      <ul>
+        <li><a href="https://github.com/Hitsupod" target="_blank" >Github</a></li>
+        <li><a href="https://twitter.com/Hitsupod" target="_blank" >Twitter</a></li>
+        <li><a href="https://www.linkedin.com/in/reginald-littleton-b9803185/" target="_blank" >Linkedin</a></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-7">
+      <img class="img-fluid rounded mb-4 mb-lg-0" src="img/computer-gaming-green-51415.jpg" alt="Responsive image" id='codeImage' width='675' height="300">
+    </div>
+  </div>
+
+  <!-- Projects Section  -->
+<div class='container'></div>
+  <div class='row'>
+    <div class='col-md-4 mb-5'>
+      <div class='card-body' id='wApp'>
+        <h1 class='card-title'>Weather App</h1>
+        <img src='img/weather.PNG' width="300" height="225" id='weatherImg'>
+        <p>Create a simple calendar application that allows the user to save events for each hour of the day. This app will 
+          run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
+        <a id='btn' class="btn btn-primary" href="https://hitsupod.github.io/Server-Side-APIs--Weather-Dashboard/" role="button" target="_blank" >View</a>
+        <a id='btn' class="btn btn-primary" href="https://github.com/Hitsupod/Server-Side-APIs--Weather-Dashboard" role="button" target="_blank" >Github Repository</a>
+      </div>
+    </div>
+  
+    <div class='col-md-4 mb-5'>
+      <div class='card-body' id='dPlanner'>
+        <h1 class='card-title'>Daily Planner</h1>
+        <img src='img/schedule.PNG' width="250" height=350" id='plannerImg'>
+        <p>Create a simple calendar application that allows the user to save events for each hour of the day. This app will 
+          run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
+        <a id='btn' class="btn btn-primary" href="https://hitsupod.github.io/Third-Party-APIs-Work-Day-Scheduler/" role="button" target="_blank">View</a>
+        <a id='btn' class="btn btn-primary" href="https://github.com/Hitsupod/Third-Party-APIs-Work-Day-Scheduler" role="button" target="_blank">Github Repository</a>
+      </div>
+    </div>
+  
+    <div class='col-md-4 mb-5'>
+      <div class='card-body' id='wAPI'>
+        <h1 class='card-title'>Weather Api</h1>
+        <img src='img/project.PNG' width="330" height="200" id='apiImg'>
+        <p>A web application that retrieves historical information for a selected date in the 
+          past for a particular geographical location based on the user input. 
+          Here is the information we want to retrieve for a historical date & location:
+        </p>
         <ul>
-          <li><a href="https://github.com/Hitsupod">Github</a></li>
-          <li><a href="https://twitter.com/Hitsupod">Twitter</a></li>
-          <li><a href="https://hitsupod.com/">Hitsupod</a></li>
+          <li>weather</li>
+          <li>location GPS information</li>
+          <li>an image that corresponds to the date and location</li>
+          <li>a historical event (if applicable)</li>
         </ul>
-      </div>
-
-      <div class="col-lg-7">
-        <img class="img-fluid rounded mb-4 mb-lg-0" src="img/computer-gaming-green-51415.jpg" alt="" id='codeImage' width='700' height="350">
+        <p>Our motiviation for this project get a situaonal glance of the past for a 
+          particular location.
+        </p>
+        <a id='btn' class="btn btn-primary" href="https://rgauna.github.io/testProject/" role="button" target="_blank">View</a>
+        <a id='btn' class="btn btn-primary" href="https://github.com/rgauna/testProject" role="button" target="_blank">Github Repository</a>
       </div>
     </div>
+  </div>
+</div>
 
-    <!-- Projects Section  -->
-    <div class='row'>
-      <div class='col-md-4 mb-5'>
-        <div class='card-body' id='wApp'>
-          <h1 class='card-title'>Weather App</h1>
-          <img src='img/weather.PNG' width="300" height="225" id='weatherImg'>
-          <p>Create a simple calendar application that allows the user to save events for each hour of the day. This app will 
-            run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
-          <a id='btn' class="btn btn-primary" href="https://hitsupod.github.io/Server-Side-APIs--Weather-Dashboard/" role="button">View</a>
-          <a id='btn' class="btn btn-primary" href="https://github.com/Hitsupod/Server-Side-APIs--Weather-Dashboard" role="button">Github Repository</a>
-        </div>
-      </div>
-    
-
-      <div class='row'>
-        <div class='col-md-4 mb-5'>
-          <div class='card-body' id='dPlanner'>
-            <h1 class='card-title'>Daily Planner</h1>
-            <img src='img/schedule.PNG' width="250" height=350" id='plannerImg'>
-            <p>Create a simple calendar application that allows the user to save events for each hour of the day. This app will 
-              run in the browser and feature dynamically updated HTML and CSS powered by jQuery.</p>
-            <a id='btn' class="btn btn-primary" href="https://hitsupod.github.io/Third-Party-APIs-Work-Day-Scheduler/" role="button">View</a>
-            <a id='btn' class="btn btn-primary" href="https://github.com/Hitsupod/Third-Party-APIs-Work-Day-Scheduler" role="button">Github Repository</a>
-          </div>
-        </div>
-    
-
-      <div class='row'>
-        <div class='col-md-4 mb-5'>
-          <div class='card-body' id='wAPI'>
-            <h1 class='card-title'>Weather Api</h1>
-            <img src='img/project.PNG' width="330" height="200" id='apiImg'>
-            <p>A web application that retrieves historical information for a selected date in the 
-              past for a particular geographical location based on the user input. 
-              Here is the information we want to retrieve for a historical date & location:
-            </p>
-            <ul>
-              <li>weather</li>
-              <li>location GPS information</li>
-              <li>an image that corresponds to the date and location</li>
-              <li>a historical event (if applicable)</li>
-            </ul>
-            <p>Our motiviation for this project get a situaonal glance of the past for a 
-              particular location.
-            </p>
-            <a id='btn' class="btn btn-primary" href="https://rgauna.github.io/testProject/" role="button">View</a>
-            <a id='btn' class="btn btn-primary" href="https://github.com/rgauna/testProject" role="button">Github Repository</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    
-    <footer id="footer">
-        <ul class="social">
-          <li>Made By Hitsupod</li>
-          <li><a href="https://linktr.ee/hitsupod">Linktr</a></li>
-        </ul>
-    </footer>
+<!-- Footer Section  -->
+<footer id="footer">
+    <ul class="social">
+      <p>Made By Hitsupod</p>
+      <p><a href="https://linktr.ee/hitsupod">Linktr</a></p>
+    </ul>
+</footer>
 </body>
 
 </html>

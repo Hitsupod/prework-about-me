@@ -55,7 +55,8 @@ a:visited {
 }
 
 .navbar-header{
-  color: #393e46;
+  background-color: #393e46;
+  color: #32e0c4;
 }
 
 .details {
@@ -93,7 +94,7 @@ a:visited {
 
 #codeImage {
   padding: 2px;
-  border-radius: 5%;
+  border-radius: 15px 50px;
 }
 
 #weatherImg {
@@ -122,7 +123,6 @@ a:visited {
 
 
 #footer {
-  padding: 20px;
   text-align: center;
   background-color: #222831;
   color: #32e0c4;
